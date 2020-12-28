@@ -175,9 +175,9 @@
         <p><a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/maven">阿里云原文章</a></p>
 <h2 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h2><h3 id="Maven-配置"><a href="#Maven-配置" class="headerlink" title="Maven 配置"></a>Maven 配置</h3><p>打开 Maven 的配置文件(windows机器一般在maven安装目录的conf/settings.xml)，在<code>&lt;mirrors&gt;&lt;/mirrors&gt;</code>标签中添加 mirror 子节点:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">    &lt;id&gt;aliyunmaven&lt;/id&gt;</span><br><span class="line">    &lt;mirrorOf&gt;*&lt;/mirrorOf&gt;</span><br><span class="line">    &lt;name&gt;阿里云公共仓库&lt;/name&gt;</span><br><span class="line">    &lt;url&gt;https:<span class="comment">//maven.aliyun.com/repository/public&lt;/url&gt;</span></span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
-<p>如果想使用其它代理仓库,可在<code>&lt;repositories&gt;&lt;/repositories&gt;</code>节点中加入对应的仓库使用地址。以使用spring代理仓为例：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;repository&gt;</span><br><span class="line">    &lt;id&gt;spring&lt;/id&gt;</span><br><span class="line">    &lt;url&gt;https:<span class="comment">//maven.aliyun.com/repository/spring&lt;/url&gt;</span></span><br><span class="line">    &lt;releases&gt;</span><br><span class="line">        &lt;enabled&gt;<span class="literal">true</span>&lt;/enabled&gt;</span><br><span class="line">    &lt;/releases&gt;</span><br><span class="line">    &lt;snapshots&gt;</span><br><span class="line">        &lt;enabled&gt;<span class="literal">true</span>&lt;/enabled&gt;</span><br><span class="line">    &lt;/snapshots&gt;</span><br><span class="line">&lt;/repository&gt;</span><br></pre></td></tr></table></figure>
-
+        
+          <a class="article-more-a" href="/2020/12/29/maven%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F/#more">more >></a>
+        
       
 
       
@@ -240,10 +240,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>springboot中用@ConfigurationProperties注解的类，prefix使用的值不支持驼峰命名和蛇形命名（下划线）</p>
-<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/springboot%E8%B8%A9%E5%9D%911%5Cpic.png" alt="驼峰命名8行"></p>
-<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/springboot%E8%B8%A9%E5%9D%911%5Cpic2.png" alt="image-20201225201047586"></p>
-<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/springboot%E8%B8%A9%E5%9D%911%5Cpic3.png" alt="全小写 行"></p>
-<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/springboot%E8%B8%A9%E5%9D%911%5Cpic4.png" alt="image-20201225201115755"></p>
+<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic.png" alt="驼峰命名8行"></p>
+<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic2.png" alt="image-20201225201047586"></p>
+<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic3.png" alt="全小写 行"></p>
+<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic4.png" alt="image-20201225201115755"></p>
 
       
 
@@ -308,7 +308,7 @@
       
         <p><strong>转载自 <a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv4184856">bilibili程序羊java学习路线</a></strong></p>
 <h1 id="全局脑图"><a href="#全局脑图" class="headerlink" title="全局脑图"></a><strong>全局脑图</strong></h1><p>先上一张学习路线脑图，这样用图形的方式展现出来，我觉得内容好像也不多 . . .</p>
-<p><img src="/2020/12/23/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%5Cpic1.webp" alt="学习路线图"></p>
+<p><img src="/2020/12/23/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/pic1.webp" alt="学习路线图"></p>
         
           <a class="article-more-a" href="/2020/12/23/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/#more">more >></a>
         
