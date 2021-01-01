@@ -152,6 +152,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-volatile、指令重排与happen-before" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/02/volatile%E3%80%81%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%E4%B8%8Ehappen-before/">volatile、指令重排与happen-before</a>
+    </h1>
+  
+
+        
+        <a href="/2021/01/02/volatile%E3%80%81%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%E4%B8%8Ehappen-before/" class="archive-article-date">
+  	<time datetime="2021-01-01T16:07:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以双重校验锁-单例模式为例子</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton singleton;  </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (singleton == <span class="keyword">null</span>) &#123;  </span><br><span class="line">        <span class="keyword">synchronized</span> (Singleton.class) &#123;  </span><br><span class="line">        <span class="keyword">if</span> (singleton == <span class="keyword">null</span>) &#123;  </span><br><span class="line">            singleton = <span class="keyword">new</span> Singleton();  </span><br><span class="line">        &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> singleton;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2021/01/02/volatile%E3%80%81%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%E4%B8%8Ehappen-before/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/01/02/volatile%E3%80%81%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%E4%B8%8Ehappen-before/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-maven配置阿里云镜像" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -242,9 +308,9 @@
         <p>springboot中用@ConfigurationProperties注解的类，prefix使用的值不支持驼峰命名和蛇形命名（下划线）</p>
 <p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic.png" alt="驼峰命名8行"></p>
 <p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic2.png" alt="image-20201225201047586"></p>
-<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic3.png" alt="全小写 行"></p>
-<p><img src="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/pic4.png" alt="image-20201225201115755"></p>
-
+        
+          <a class="article-more-a" href="/2020/12/25/springboot%E8%B8%A9%E5%9D%911/#more">more >></a>
+        
       
 
       
@@ -573,7 +639,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 John Doe
+    		&copy; 2021 John Doe
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
